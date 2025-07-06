@@ -1,0 +1,18 @@
+1. Installare estensioni python, jupyter, Edit CSV, sqlite viewer, data wrangler, fastapi-snippets
+
+2. Creare cartella del progetto root e strutturare le cartelle del progetto (es. database, dataset...)
+
+3. Creare venv con python -m venv venv e attivare il venv con lo script .\venv\Scripts\Activate.ps1 
+Nel caso non si eseguisse lo script per mancanza di permessi eseguire questo script Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+4. Scaricarsi i csv necessari da analizzare e metterli nella cartella dataset (controllare separatore e usare edit csv)
+
+5. Checkare che ci sia il python enviroment quando runni codici
+
+6. Creare il file jupyter:
+ - importare ed installare le librerie: pandas, os, sqlite3, plotly.express
+ - definire i path del dataset
+ - salvataggio nel dataframe il path
+ -eseguire vari controlli (isnull,isnull.sum, info, describe)
+
+ uvicorn api:app --reload (per startare l'app e aggiungere /docs per provare le api)
